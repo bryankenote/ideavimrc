@@ -1,0 +1,40 @@
+set relativenumber
+set number 
+set so=16
+
+set NERDTree
+
+let mapleader = " "
+
+map <leader>e :NERDTreeToggle<CR>
+
+map <leader>st <Action>(SearchEverywhere)
+map <C-\> <Action>(ActivateTerminalToolWindow)
+map <C-o> <Action>(Back)
+
+map gd <Action>(GotoDeclaration)
+map gI <Action>(GotoImplementation)
+map gr <Action>(FindUsages)
+map gl <Action>(ShowErrorDescription)
+
+map <C-q> <Action>(CloseContent)
+
+map <leader>dt <Action>(ToggleLineBreakpoint)
+
+map <leader>sf <Action>(GotoFile)
+map <leader>st <Action>(TextSearchAction)
+
+map <C-w>e <Action>(SplitVertically)
+map <C-w>o <Action>(SplitHorizontally)
+
+map <C-s> <Action>(SaveDocument)
+map <C-S-s> <Action>(SaveAll)
+
+noremap ]] L
+noremap [[ H
+
+map <S-L> <Action>(NextTab)
+map <S-H> <Action>(PreviousTab)
+
+map <leader>tq <Action>(ActivateProblemsViewToolWindow)
+
